@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Formação Full Stack PHP Developer UpInside
  * @author Robson V. Leite <https://www.upinside.com.br>
@@ -51,7 +52,7 @@ function fullStackPHPClassName($className)
 function fullStackPHPClassSession($session, $line, $color = null)
 {
     $line = (!empty($line) ? " <span class='line-session'>| Linha {$line}</span>" : "");
-    $session = (!empty($session) ? "[ {$session}{$line} ]" : "");
+    $session = (!empty($session) ? "[ {$session}{$line} ]" : "[ {vazio}{vazio} ]");
     $color = (!empty($color) ? "var(--{$color})" : "");
     echo "<div class='code line' style='background-color: {$color}'>{$session}</div>";
 }
